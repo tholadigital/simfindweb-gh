@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a 4Tracker - Digital Entrepreneur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #0A1C4F; /* Deep Blue Background */
+            --accent-yellow: #FFD700; /* Bright Yellow/Gold Accent */
+        }
+        body {
+            background-color: var(--primary-blue);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        /* Style adjustments from the original code */
+        .navbar-brand img { height: 60px; margin-right: 10px; }
+        .nav-link, .navbar-brand { color: black; font-weight: 500; }
+        .nav-link:hover { color: var(--accent-yellow) !important; }
+        .yellow-text { color: var(--accent-yellow) !important; }
+        .btn-yellow {
+            background-color: var(--accent-yellow);
+            color: var(--primary-blue);
+            font-weight: bold;
+            border: none;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        .btn-yellow:hover {
+            background-color: #ffc400; /* Slightly darker yellow on hover */
+            color: var(--primary-blue);
+        }
+        .section-header {
+            color: var(--accent-yellow);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-yellow);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .feature-card {
+            border: 2px solid var(--accent-yellow);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .icon-large {
+            font-size: 2.5rem;
+            color: var(--accent-yellow);
+        }
+        .table-responsive th, .table-responsive td {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            vertical-align: middle;
+        }
+        .table-responsive th {
+            color: var(--accent-yellow);
+            font-weight: bold;
+        }
+        .lead-hustle {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        /* Custom styles for the Modal and Iframe */
+        .modal-content {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+        .modal-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .iframe-container {
+            width: 100%;
+            /* Make it responsive. Adjust height as needed for the full form */
+            height: 80vh; 
+            min-height: 600px;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand p-1 sticky-top" style="background-color: white; border-bottom: 2px solid gold;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="wconvert.html">
+                <img src="images/simlogoblack.png" alt="SimFind Logo" style="height: 60px; margin-right: 10px;">
+                4TRACK Partner Program
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-none d-sm-block" href="wconvert.html">Back to Main Site</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="text-center py-5" style="background-color: #112764eb;">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-uppercase mt-4 yellow-text">
+                🚀 BECOME A 4TRACKER
+            </h1>
+            <p class="lead-hustle mb-4">
+                Forget the 9-to-5. Start your own tracking business today with zero inventory cost and massive commission. Your phone is your office, your territory is your cash machine.
+            </p>
+            
+            <button type="button" class="btn btn-yellow btn-lg mt-3" id="apply-button" data-bs-toggle="modal" data-bs-target="#applicationModal">
+                <i class="bi bi-rocket-takeoff-fill me-2"></i>APPLY NOW. YOUR HUSTLE STARTS HERE.
+            </button>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <h2 class="text-center section-header">THE DEAL: 30% COMMISSION</h2>
+        <p class="text-center mb-5 lead-hustle">We’ve stripped out the corporate BS to give you a genuine entrepreneurial opportunity. This is a direct partnership where your profit is tied directly to your hustle.</p>
+
+        <div class="table-responsive">
+            <table class="table table-dark table-striped text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">What You Get</th>
+                        <th scope="col">The Breakdown</th>
+                        <th scope="col">Why It Matters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="bi bi-cash-stack icon-large me-2"></i> Direct Sales Commission</td>
+                        <td>30% of the Net Sale Price. Paid Weekly after unit activation.</td>
+                        <td>One of the highest payouts in the industry. Your hard work pays instantly.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-globe-americas icon-large me-2"></i> The Area Bonus Pool</td>
+                        <td>A quarterly shared profit pool from your local sales Base (Township/Suburb).</td>
+                        <td>You are incentivized to protect and dominate your exclusive local area.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-people-fill icon-large me-2"></i> Recruitment (Sponsor) Fee</td>
+                        <td>5% commission on the sales of any new 4Tracker you personally mentor.</td>
+                        <td>Build your own squad and earn passive income from their success.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center section-header">📲 THE HUSTLE: PHONE-TO-PROFIT WORKFLOW</h2>
+        <p class="text-center mb-5 lead-hustle">We handle the financial risk and the logistics so you can focus 100% on sales, setup, and service. This is your business-in-a-box.</p>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+                <div class="feature-card text-center">
+                    <i class="bi bi-patch-check icon-large mb-3"></i>
+                    <h4 class="yellow-text">1. Sell It</h4>
+                    <p class="small">Close the sale via your unique link. Customer pays 4Track directly. Zero financial risk for you.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="feature-card text-center">
+                    <i class="bi bi-box-seam icon-large mb-3"></i>
+                    <h4 class="yellow-text">2. Ship It</h4>
+                    <p class="small">4Track ships the complete GPS Unit directly to YOU</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="feature-card text-center">
+                    <i class="bi bi-wrench-adjustable icon-large mb-3"></i>
+                    <h4 class="yellow-text">3. Set It Up</h4>
+                    <p class="small">You unbox, activate the SIM, link the unit to the customer's account, and prep it for delivery.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="feature-card text-center">
+                    <i class="bi bi-wallet-fill icon-large mb-3"></i>
+                    <h4 class="yellow-text">4. Get Paid</h4>
+                    <p class="small">After final delivery and activation, your 30% commission hits your account that week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="feature-card h-100">
+                    <h3 class="section-header">🌐 OWN YOUR BASE: AREA PROTECTION</h3>
+                    <p class="lead-hustle">We don't do 'sales territories'—we do Bases.</p>
+                    <ul>
+                        <li><strong class="yellow-text">Your Town, Your Rules:</strong> You are assigned an exclusive Base (Township/Suburb) for sales and fulfillment.</li>
+                        <li><strong class="yellow-text">Built-in Exclusivity:</strong> Bases have a limited slot count for 4Trackers. This protects your market and ensures you can earn your share of the Area Bonus Pool.</li>
+                        <li><strong class="yellow-text">Local Face:</strong> By controlling the Merch and delivery, you become the local logistics hub for 4Track.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feature-card h-100">
+                    <h3 class="section-header">🎓 THE KNOWLEDGE: MOBILE-FIRST CERTIFICATION</h3>
+                    <p class="lead-hustle">Your training is a series of short, sharp, mobile video tutorials that teach you the essential skills.</p>
+                    <div class="mt-3">
+                        <h5><i class="bi bi-phone-vibrate yellow-text me-2"></i> Digital Setup Mastery</h5>
+                        <p class="small">How to troubleshoot connectivity and activate a unit in minutes, all from your phone. (Quality Control Expert)</p>
+                        <h5><i class="bi bi-truck yellow-text me-2"></i> Local Logistics & Installation</h5>
+                        <p class="small">How to coordinate with local auto-electricians and manage the physical setup process efficiently. (Service Coordinator)</p>
+                        <h5><i class="bi bi-megaphone yellow-text me-2"></i> Sales & Social Hustle</h5>
+                        <p class="small">Generate leads using TikTok, Instagram, and WhatsApp. Master the art of social selling using your unique link. (Lead Generator)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-5 bg-dark" id="application-form">
+        <div class="container">
+            <h2 class="display-5 yellow-text fw-bold mb-4">Ready to Launch Your GPS Empire?</h2>
+            <p class="lead mb-4">We are selective: not everyone makes the cut. Show us your hustle.</p>
+            <button type="button" class="btn btn-yellow btn-lg" style="padding: 15px 50px;" data-bs-toggle="modal" data-bs-target="#applicationModal">
+                <i class="bi bi-person-lines-fill me-2"></i>APPLY TO BECOME A 4TRACKER
+            </button>
+            <p class="small mt-3">*(Application requires a short form and a 1-minute video pitch explaining why you're ready to own your Base.)*</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 mt-3">
+        <a href="wconvert.html" class="btn btn-yellow btn-lg"><i class="bi bi-whatsapp" style="margin-right: 10px;" ></i>contact us</a>
+        
+        <p class="review-rating">
+            <span class="stars yellow-text">★★★★★</span> (4.8/5.0 based on 500+ reviews)
+        </p>
+        <div class="footer-links mt-3">
+            <a href="wconvert.html">Contact Us</a> |
+            <a href="wconvert.html">FAQs</a> |
+            <a href="wconvert.html">Account</a> |
+            <a href="wconvert.html">4track.co.za</a>
+        </div>
+    </footer>
+    
+    <div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title yellow-text fw-bold" id="applicationModalLabel">🚀 4Tracker Partner Application</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="iframe-container">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXBwGrB9m7yFMpgtHSgTwtQSivzvP4aKTfqPOsZ3Uk524b6g/viewform?embedded=true">Loading…</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7JR315714"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q7JR315714');
+        gtag('config', 'AW-698102531');
+    </script>
+    
+</body>
+</html>
